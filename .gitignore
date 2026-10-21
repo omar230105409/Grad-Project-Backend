@@ -1,4 +1,6 @@
 .venv
-/db.sqlite
-__pycache__
 .vscode
+/db.sqlite
+.gitignore
+__pycache__
+.*
