@@ -3,7 +3,7 @@ from sqlmodel import create_engine, Session
 
 DATABASE = os.getenv(
     "DATABASE_URL",
-    "postgresql://USERNAME:PASSWORD@localhost:PORT/SmartHealthCare"
+    "postgresql://postgres:AS01284780876@localhost:5432/SmartHealthCare"
 )
 
 engine = create_engine(DATABASE, echo=True)

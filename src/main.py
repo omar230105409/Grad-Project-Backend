@@ -1,7 +1,12 @@
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from fastapi import FastAPI, Depends
 from sqlmodel import Session, select
 from database import engine, get_session
-from  ..Model import models
+from Model import models
 
 
 app = FastAPI(title="Smart Medicine Bottle API")

@@ -182,7 +182,7 @@ class Caregiver(SQLModel, table=True):
 
     id: uuid.UUID = Field(default_factory=uuid.uuid4, primary_key=True)
     patient_id: uuid.UUID = Field(foreign_key="users.id", nullable=False, ondelete="CASCADE")
-    caregiver_id: uuid.UUID = Field(foreign_key="users.id", nullable=False, ondate="CASCADE") 
+    caregiver_id: uuid.UUID = Field(foreign_key="users.id", nullable=False, ondelete="CASCADE") 
     notify_on_missed: bool = Field(default=True, nullable=False)
 
 
